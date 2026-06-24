@@ -1,0 +1,5 @@
+/* Custom styles for the shop application */
+
+h2 {
+    color: var(--color-primary);
+}
