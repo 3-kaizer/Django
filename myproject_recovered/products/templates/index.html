@@ -1,35 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/bootstrap/css/bootstrap.css' %}">
-    
-</head>
-<body>
-    <nav>
-        <ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'about' %}">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'signup' %}">Signup</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
-  </li>
-         </ul>
-    </nav>
-    <h2>Welcome to my shop</h2>
-    <button class="btn btn-success">Read More</button>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+ {% block content %}
+ <section class="lima">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptatum voluptate non? Labore, sunt quae!</p>
+   </section>
+  
+   {% endblock %}
